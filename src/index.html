@@ -7,22 +7,17 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
     <title>Escacs de Sants</title>
   </head>
-  <body>
-    <a href="about.html">About</a>
-    <a href="members.html">Members</a>
-    <a href="contact.html">Contact</a>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+  <body class="chess-bg">
+    <include src="./views/header.html"></include>
+    <div class="grid">
+        <div class="h1">
+          <h1 class="animate__animated animate__backInRight">Club d'Escacs de Sants</h1>
+        </div>
+        <div class="img escacs"></div>
+        <div class="txt">
+          <p class="animate__animated animate__backInLeft">Uneix-te al club per divertir-te, conèixer gent nova, fer barri i sobretot...<span>Jugar a escacs!</span></p>
+        </div>
+        <div class="img sants"></div>
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>

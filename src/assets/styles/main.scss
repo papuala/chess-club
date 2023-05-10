@@ -15,8 +15,9 @@
  * see commented examples below
  */
 
-// @import "npm:@fortawesome/fontawesome-free/css/all.css";
-// @import "animate.css/";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+@import "animate.css/";
+@import "bootstrap/scss/bootstrap";
 
 /**
  * Import layouts
@@ -26,6 +27,7 @@
 @import "layouts/home";
 @import "layouts/about";
 @import "layouts/members";
+@import "layouts/navigation"
 
 /**
  * Do NOT include anything else in this file!

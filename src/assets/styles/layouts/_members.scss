@@ -1,24 +1,40 @@
-* {
-  box-sizing: border-box;
-}
 
-body {
+.flex {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
 }
 
-.grid {
-  display: flex;
+.member {
+  width: 350px;
 }
 
-.member img {
-  height: 100px;
+.member div {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
 }
+
+#member1 {
+  background-image: url(../images/member1.jpeg);
+}
+#member2 {
+  background-image: url(../images/member2.jpeg);
+}
+#member3 {
+  background-image: url(../images/member3.jpeg);
+}
+#member4 {
+  background-image: url(../images/member4.jpeg);
+}
+#member5 {
+  background-image: url(../images/member5.jpeg);
+}
+#member6 {
+  background-image: url(../images/member6.jpeg);
+}
+
