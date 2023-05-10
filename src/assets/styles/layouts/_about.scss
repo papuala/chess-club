@@ -4,47 +4,45 @@
 }
 
 .article-img {
-  background-image: url(../images/escacs.jpeg);
   height: 50vh;
+  margin-bottom: 50px;
+  background-image: url(../images/escacs.jpeg);
   background-position: center;
   background-size: cover;
-  margin-bottom: 50px;
 }
 
 .article {
   max-width: 80%;
   margin-inline: auto;
   text-align: justify;
+
   img {
     max-width: 100%;
   }
+
   li {
     padding-top: 8px;
   }
+
   span {
     font-weight: 600;
   }
 }
 
 .quote {
+  padding: 20px 8px 10px 20px;
   margin-left: 10%;
-  padding-right: 8px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
   text-align: right;
-  border-right: 5px solid $dark;
   background-color: $light;
+  border-right: 5px solid $dark;
+
   p {
     font-weight: bold;
   }
 }
 
 blockquote {
+  font-family: $font-family-serif;
   font-size: 1.6em;
   font-style: italic;
-  font-family: $font-family-serif;
 }
-
-
-

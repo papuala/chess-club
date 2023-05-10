@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>Uneix-te al club</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+    <h1>Uneix-te</h1>
+    <div>
+      <form name="contact" method="POST" netlify>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br><br>
+        
+        <label for="cognoms">Cognoms:</label>
+        <input type="text" id="cognoms" name="cognoms" required><br><br>
+        
+        <label for="edat">Edat:</label>
+        <input type="number" id="edat" name="edat" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="telefon">Telèfon:</label>
+        <input type="tel" id="telefon" name="telefon" required><br><br>
+     
+        <label for="rating">Classificació ELO:</label>
+        <input type="number" id="rating" name="rating"><br><br>
+        
+        <label for="data_naixement">Data de Naixement:</label>
+        <input type="date" id="data_naixement" name="data_naixement"><br><br>
+        
+        <label for="preferencies">Preferències de Joc:</label>
+        <div class="checkbox">
+          <input type="checkbox" id="partides_rapides" name="preferencies" value="partides_rapides">
+          <label for="partides_rapides">Partides Ràpides</label><br>
+          <input type="checkbox" id="partides_lentes" name="preferencies" value="partides_lentes">
+          <label for="partides_lentes">Partides Lentes</label><br><br>
+        </div>
+        
+        <input type="submit" value="Enviar Sol·licitud">
+      </form>      
+    </div>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

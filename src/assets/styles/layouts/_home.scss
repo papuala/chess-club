@@ -10,10 +10,10 @@ body {
 }
 
 h1 {
-  text-align: center;
-  font-size: 3rem;
   padding-top: 50px;
   padding-bottom: 40px;
+  font-size: 3rem;
+  text-align: center;
 }
 
 p {
@@ -23,21 +23,21 @@ p {
 }
 
 .chess-bg {
-  background-color: #f1dcbf;
-  opacity: 1;
-  background-image:  repeating-linear-gradient(45deg, #7b5e22 25%, transparent 25%, transparent 75%, #7b5e22 75%, #7b5e22), repeating-linear-gradient(45deg, #7b5e22 25%, #f1dcbf 25%, #f1dcbf 75%, #7b5e22 75%, #7b5e22);
+  background-color: $light;
+  background-image: repeating-linear-gradient(45deg, $dark 25%, transparent 25%, transparent 75%, $dark 75%, $dark), repeating-linear-gradient(45deg, $dark 25%, $light 25%, $light 75%, $dark 75%, $dark);
   background-position: 0 0, 50px 50px;
   background-size: 100px 100px;
+  opacity: 1;
 }
 
-.h1 { 
-  background-color: white;
-  text-align: right;
+.h1 {
   padding-right: 30px;
   margin-bottom: 0;
+  text-align: right;
+  background-color: white;
 }
 
-.img { 
+.img {
   background-position: center;
   background-size: cover;
 }
@@ -50,32 +50,42 @@ p {
   background-image: url(../images/sants.jpeg);
 }
 
-.txt { 
-  background-color: white;
+.txt {
   text-align: left;
+  background-color: white;
+
   p {
     max-width: 40%;
-    padding-left: 10%;
     padding-top: 10%;
+    padding-left: 10%;
   }
 }
 
 @supports (display: grid) {
   .grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 12vh);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 0;
   }
 
-  .h1 { grid-area: 2 / 5 / 5 / 9; }
+  .h1 {
+    grid-area: 2 / 5 / 5 / 9;
+  }
 
-  .img { border: 5px solid white; }
+  .img {
+    border: 5px solid white;
+  }
 
-  .escacs { grid-area: 3 / 3 / 5 / 5; }
-  
-  .txt { grid-area: 5 / 1 / 8 / 7; }
+  .escacs {
+    grid-area: 3 / 3 / 5 / 5;
+  }
 
-  .sants { grid-area: 6 / 4 / 9 / 8; }
+  .txt {
+    grid-area: 5 / 1 / 8 / 7;
+  }
+
+  .sants {
+    grid-area: 6 / 4 / 9 / 8;
+  }
 }

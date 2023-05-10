@@ -1,23 +1,32 @@
-footer, header {
-  background-color: #7b5e22;
-  min-height: 100px;
+footer,
+header {
   display: flex;
-  padding-inline: 10%;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  padding-inline: 10%;
+  background-color: $dark;
 
   li {
     display: inline;
     padding-inline: 10px;
   }
+}
 
-  a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
+a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $light;
+}
+
+a:hover img {
+  border: 2px solid $light;
 }
 
 footer {
@@ -25,9 +34,7 @@ footer {
 }
 
 .logo {
-  border-radius: 100%;
-  height: 70px;
   width: 70px;
+  height: 70px;
+  border-radius: 100%;
 }
-
-
