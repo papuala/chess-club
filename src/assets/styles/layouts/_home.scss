@@ -3,23 +3,31 @@
   margin: 0;
 }
 
-body {
-  font-family: $font-family-sans-serif;
-  text-align: center;
-  background-color: $bg;
-}
+body { font-family: $font-family-sans-serif; }
 
 h1 {
   padding-top: 50px;
   padding-bottom: 40px;
-  font-size: 3rem;
+  font-size: 1rem;
   text-align: center;
+}
+
+@include media-breakpoint-up(sm) {
+  h1 { font-size: 2rem; }
+}
+
+@include media-breakpoint-up(md) {
+  h1 { font-size: 3rem; }
 }
 
 p {
   margin-block: 20px;
-  font-size: 1rem;
+  font-size: .8rem;
   line-height: 1.5rem;
+}
+
+@include media-breakpoint-up(sm) {
+  p { font-size: 1rem; }
 }
 
 .chess-bg {
@@ -42,13 +50,9 @@ p {
   background-size: cover;
 }
 
-.escacs {
-  background-image: url(../images/home.jpeg);
-}
+.escacs { background-image: url(../images/home.jpeg); }
 
-.sants {
-  background-image: url(../images/sants.jpeg);
-}
+.sants { background-image: url(../images/sants.jpeg); }
 
 .txt {
   text-align: left;
@@ -69,23 +73,35 @@ p {
     grid-gap: 0;
   }
 
-  .h1 {
-    grid-area: 2 / 5 / 5 / 9;
-  }
+  .h1 { grid-area: 2 / 5 / 5 / 9; }
 
+  .img { border: 5px solid white; }
+
+  .escacs { grid-area: 3 / 3 / 5 / 5; }
+
+  .txt { grid-area: 5 / 1 / 8 / 7; }
+
+  .sants { grid-area: 6 / 4 / 9 / 8; }
+}
+
+@supports not (display: grid) {
+  h1{
+    background-color: transparent;
+  }
+  
   .img {
-    border: 5px solid white;
+    height: 400px;
+    width: 80%;
+    margin-inline: auto;
   }
-
-  .escacs {
-    grid-area: 3 / 3 / 5 / 5;
-  }
-
+  
   .txt {
-    grid-area: 5 / 1 / 8 / 7;
-  }
-
-  .sants {
-    grid-area: 6 / 4 / 9 / 8;
+    text-align: center;
+    background-color: $light;
+  
+    p {
+      max-width: 100%;
+      padding: 20px;
+    }
   }
 }

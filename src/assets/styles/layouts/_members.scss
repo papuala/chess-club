@@ -8,8 +8,10 @@
   text-align: center;
 }
 
-.member {
-  width: 350px;
+.member { width: 400px; }
+
+@include media-breakpoint-up(md) {
+  .member { width: 350px; }
 }
 
 .member div {
@@ -19,26 +21,14 @@
   background-size: cover;
 }
 
-#member1 {
-  background-image: url(../images/member1.jpeg);
-}
+#member1 { background-image: url(../images/member1.jpeg); }
 
-#member2 {
-  background-image: url(../images/member2.jpeg);
-}
+#member2 { background-image: url(../images/member2.jpeg); }
 
-#member3 {
-  background-image: url(../images/member3.jpeg);
-}
+#member3 { background-image: url(../images/member3.jpeg); }
 
-#member4 {
-  background-image: url(../images/member4.jpeg);
-}
+#member4 { background-image: url(../images/member4.jpeg); }
 
-#member5 {
-  background-image: url(../images/member5.jpeg);
-}
+#member5 { background-image: url(../images/member5.jpeg); }
 
-#member6 {
-  background-image: url(../images/member6.jpeg);
-}
+#member6 { background-image: url(../images/member6.jpeg); }

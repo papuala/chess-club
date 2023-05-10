@@ -4,7 +4,6 @@
 }
 
 .article-img {
-  height: 50vh;
   margin-bottom: 50px;
   background-image: url(../images/escacs.jpeg);
   background-position: center;
@@ -16,17 +15,11 @@
   margin-inline: auto;
   text-align: justify;
 
-  img {
-    max-width: 100%;
-  }
+  img { max-width: 100%; }
 
-  li {
-    padding-top: 8px;
-  }
+  li { padding-top: 8px; }
 
-  span {
-    font-weight: 600;
-  }
+  span { font-weight: 600; }
 }
 
 .quote {
@@ -36,9 +29,7 @@
   background-color: $light;
   border-right: 5px solid $dark;
 
-  p {
-    font-weight: bold;
-  }
+  p { font-weight: bold; }
 }
 
 blockquote {
